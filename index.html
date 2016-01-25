@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Loan Application</title>
+  <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+
+<body>
+  <h1>LOAN APPLICATION</h1>
+  <h3>Applicant Information</h3>
+      <fieldset>
+        <label>First Name: <input type="text" name="first-name"
+          size="45"></label>
+        <label>Middle Initial:<input type="text" name="middle initial"
+          size="1" maxlength="1"></label>
+        <label>Last Name: <input type="text" name="last name"
+          size="65"></label><br><br>
+        <label>Street Address: <input type="text" name="address"
+          size="60"></label>
+        <label>City: <input type="text" name="city"
+          size="38"></label>
+        <label>State: <input type="text" name="state"
+          size="2"></label>
+        <label>Zip Code: <input type="zip-code" name="zip"
+          size="9"></label><br><br>
+        <label>Telephone: <input type="telephone"  name="telephone" 
+          size="15"></label>
+        <label>Email Address: <input type="email" required
+          size="45"></label>
+        <label>Linked In URL: <input type="url" required size="45"></label>
+  </fieldset>
+
+  <h3>Employer Information</h3>
+      <fieldset>
+        <label>Name: <input type="text" name="employer"
+          size="60"></label>
+        <label>Street Address: <input type="text" name="address"
+          size="70"></label><br><br>
+        <label>City: <input type="text" name="city"
+          size="38"></label>
+        <label>State: <input type="text" name="state"
+          size="2"></label>
+        <label>Zip Code: <input type="text" name="zip"
+          size="9"></label>
+      </fieldset>
+
+<h3>Loan Information</h3>
+    Type of Loan:
+      <select type="loan-type">
+        <option value="commercial">Commercial</option>
+        <option value="real estate">Real-Estate</option>
+        <option value="personal">Personal</option>
+        <option value="mortgage">Mortgage</option>
+      </select>
+          <label>Requested Amount of Loan: $ <input type="text" 
+          name="amount" size="20"></label><br><br>
+    Length of Loan
+      <input type="radio" name="length" value="5 years" checked="checked"> 5 Years
+      <input type="radio" name ="length" value="10 years"> 15 Years
+      <input type="radio" name="length" value="30 years"> 30 Years<br><br>
+    Special Conditions
+      <input type="checkbox" name="conditions" value="down-payment"> Down Payment
+      <input type="checkbox" name="conditions" value="out-resident"> Out-of-State Resident
+      <input type="checkbox" name="conditions" value="married"> Married
+      <input type="checkbox" name="conditions" value="co-sign"> To Be Co-signed<br><br>
+    Comments:<br>
+      <textarea name="comments" rows="10" cols="100"></textarea>
+  </form> 
+</body>
+</html>
